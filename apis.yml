@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - License Management
-  - Compliance
-  - Software Licensing
-  - Cost Management
   - AWS
+  - Compliance
+  - Cost Management
+  - License Management
+  - Software Licensing
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,8 +28,8 @@ apis:
     humanURL: https://aws.amazon.com/license-manager/
     baseURL: https://license-manager.amazonaws.com
     tags:
-      - License Management
       - Compliance
+      - License Management
       - Software Licensing
     properties:
       - type: Documentation
