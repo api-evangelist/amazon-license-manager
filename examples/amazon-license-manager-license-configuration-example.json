@@ -1,0 +1,10 @@
+{
+  "LicenseConfigurationId": "lic-0e6b56b16c0c11111",
+  "LicenseConfigurationArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "windows-server-2022",
+  "LicenseCountingType": "vCPU",
+  "LicenseCount": 100,
+  "LicenseCountHardLimit": true,
+  "ConsumedLicenses": 45,
+  "Status": "AVAILABLE"
+}

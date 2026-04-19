@@ -1,0 +1,82 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon License Manager
+  description: Amazon License Manager API for managing license manager resources.
+  tags:
+  - Amazon License Manager
+  - AWS
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: license-manager
+    baseUri: https://license-manager.us-east-1.amazonaws.com
+    description: Amazon License Manager service.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{AWS_ACCESS_KEY_ID}}'
+      placement: header
+    resources:
+    - name: license-configurations
+      path: /license-configurations
+      description: License configuration management
+      operations:
+      - name: createlicenseconfiguration
+        method: POST
+        description: Creates a license configuration.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listlicenseconfigurations
+        method: GET
+        description: Lists the license configurations for your account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: getlicenseconfiguration
+        method: GET
+        description: Gets detailed information about the specified license configuration.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8101
+    namespace: license-manager-rest
+    resources: []
+  - type: mcp
+    port: 9101
+    namespace: license-manager-mcp
+    transport: http
+    tools:
+    - name: createlicenseconfiguration
+      description: Creates a license configuration.
+      hints:
+        readOnly: false
+        idempotent: false
+      call: license-manager.createlicenseconfiguration
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listlicenseconfigurations
+      description: Lists the license configurations for your account.
+      hints:
+        readOnly: true
+        idempotent: true
+      call: license-manager.listlicenseconfigurations
+      outputParameters:
+      - type: object
+        mapping: $.
