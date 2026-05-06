@@ -1,4 +1,4 @@
-naftiko: 1.0.0-alpha1
+naftiko: 1.0.0-alpha2
 info:
   label: Amazon License Manager Workflow
   description: Unified workflow capability for Amazon License Manager combining resource management and operations.
@@ -7,7 +7,7 @@ info:
   - AWS
   - Workflow
   created: '2026-04-19'
-  modified: '2026-04-19'
+  modified: '2026-05-06'
 binds:
 - namespace: env
   keys:
@@ -15,8 +15,44 @@ binds:
     AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
 capability:
   consumes:
-  - import: license-manager
-    location: ./shared/license-manager.yaml
+  - type: http
+    namespace: license-manager
+    baseUri: https://license-manager.us-east-1.amazonaws.com
+    description: Amazon License Manager service.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{AWS_ACCESS_KEY_ID}}'
+      placement: header
+    resources:
+    - name: license-configurations
+      path: /license-configurations
+      description: License configuration management
+      operations:
+      - name: createlicenseconfiguration
+        method: POST
+        description: Creates a license configuration.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: listlicenseconfigurations
+        method: GET
+        description: Lists the license configurations for your account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+      - name: getlicenseconfiguration
+        method: GET
+        description: Gets detailed information about the specified license configuration.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
   exposes:
   - type: rest
     port: 8080
