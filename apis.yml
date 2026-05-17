@@ -69,7 +69,7 @@ common:
   url: https://portal.aws.amazon.com/billing/signup
 - type: Login
   url: https://signin.aws.amazon.com/
-- type: Status
+- type: StatusPage
   url: https://health.aws.amazon.com/health/status
 - type: Contact
   url: https://aws.amazon.com/contact-us/
