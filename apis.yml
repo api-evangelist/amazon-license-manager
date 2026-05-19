@@ -1,10 +1,8 @@
 aid: amazon-license-manager
 name: Amazon License Manager
-description: >-
-  AWS License Manager makes it easier to manage licenses in AWS and on-premises
-  servers from software vendors such as Microsoft, SAP, Oracle, and IBM. It
-  helps you control your licensing costs by letting you create rules that emulate
-  the terms of your licensing agreements.
+description: AWS License Manager makes it easier to manage licenses in AWS and on-premises servers from software vendors such
+  as Microsoft, SAP, Oracle, and IBM. It helps you control your licensing costs by letting you create rules that emulate the
+  terms of your licensing agreements.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -13,18 +11,15 @@ tags:
 - Cost Management
 - License Management
 - Software Licensing
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
 - aid: amazon-license-manager:aws-license-manager-api
   name: AWS License Manager API
-  description: >-
-    The AWS License Manager API provides programmatic access to create and
-    manage license configurations, license associations, grants, tokens, and
-    license reports for managing software licenses across AWS.
+  description: The AWS License Manager API provides programmatic access to create and manage license configurations, license
+    associations, grants, tokens, and license reports for managing software licenses across AWS.
   humanURL: https://aws.amazon.com/license-manager/
   baseURL: https://license-manager.amazonaws.com
   tags:
@@ -46,6 +41,8 @@ apis:
     url: json-schema/amazon-license-manager-license-configuration-schema.json
   - type: JSONLD
     url: json-ld/amazon-license-manager-context.jsonld
+  - type: NaftikoCapability
+    url: capabilities/amazon-license-manager-license-configurations.yaml
 common:
 - type: Portal
   url: https://aws.amazon.com/license-manager/
@@ -103,22 +100,20 @@ common:
     description: Access software licenses purchased through AWS Marketplace.
 - type: SpectralRules
   url: rules/amazon-license-manager-spectral-rules.yml
-- type: NaftikoCapability
-  url: capabilities/amazon-license-manager-workflow.yaml
 - type: Vocabulary
   url: vocabulary/amazon-license-manager-vocabulary.yaml
 - type: Integrations
   url: https://aws.amazon.com/marketplace
 integrations:
-  - name: Sign in
-  - name: Agent Mode
-  - name: 'Why AWS Marketplace?'
-  - name: Get started in AWS Marketplace
-  - name: Industry
-  - name: Resources
-  - name: Become a Channel Partner
-  - name: Sell in AWS Marketplace
-  - name: Manage Your Account
+- name: Sign in
+- name: Agent Mode
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Industry
+- name: Resources
+- name: Become a Channel Partner
+- name: Sell in AWS Marketplace
+- name: Manage Your Account
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
