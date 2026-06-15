@@ -1,0 +1,105 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon License Manager API",
+    "version": "2024-01-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "License Configurations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Amazon License Manager List License Configurations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://license-manager.us-east-1.amazonaws.com/license-configurations"
+          },
+          "docs": "Lists the license configurations for your account."
+        },
+        {
+          "info": {
+            "name": "Amazon License Manager Create License Configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://license-manager.us-east-1.amazonaws.com/license-configurations"
+          },
+          "docs": "Creates a license configuration."
+        },
+        {
+          "info": {
+            "name": "Amazon License Manager Get License Configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://license-manager.us-east-1.amazonaws.com/license-configurations/:LicenseConfigurationArn",
+            "params": [
+              {
+                "name": "LicenseConfigurationArn",
+                "value": "",
+                "type": "path",
+                "description": "Amazon Resource Name (ARN) of the license configuration."
+              }
+            ]
+          },
+          "docs": "Gets detailed information about the specified license configuration."
+        },
+        {
+          "info": {
+            "name": "Amazon License Manager Update License Configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://license-manager.us-east-1.amazonaws.com/license-configurations/:LicenseConfigurationArn",
+            "params": [
+              {
+                "name": "LicenseConfigurationArn",
+                "value": "",
+                "type": "path",
+                "description": "Amazon Resource Name (ARN) of the license configuration."
+              }
+            ]
+          },
+          "docs": "Modifies the attributes of an existing license configuration."
+        },
+        {
+          "info": {
+            "name": "Amazon License Manager Delete License Configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://license-manager.us-east-1.amazonaws.com/license-configurations/:LicenseConfigurationArn",
+            "params": [
+              {
+                "name": "LicenseConfigurationArn",
+                "value": "",
+                "type": "path",
+                "description": "Amazon Resource Name (ARN) of the license configuration."
+              }
+            ]
+          },
+          "docs": "Deletes the specified license configuration."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
