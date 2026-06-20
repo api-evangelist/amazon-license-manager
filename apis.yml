@@ -5,7 +5,7 @@ description: >-
   Microsoft, SAP, Oracle, and IBM. It helps you control your licensing costs by letting you create rules that emulate
   the terms of your licensing agreements.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AWS
   - Compliance
