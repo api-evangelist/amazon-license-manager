@@ -44,6 +44,14 @@ apis:
       - type: JSONLD
         url: json-ld/amazon-license-manager-context.jsonld
 common:
+  - type: TrustCenter
+    url: security/amazon-license-manager-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/amazon-license-manager-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/amazon-license-manager-domain-security.yml
+  - type: Authentication
+    url: authentication/amazon-license-manager-authentication.yml
   - type: Portal
     url: https://aws.amazon.com/license-manager/
   - type: Portal
