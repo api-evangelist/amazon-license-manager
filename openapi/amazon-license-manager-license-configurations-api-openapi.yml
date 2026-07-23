@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Amazon License Manager API
+  title: Amazon License Manager License Configurations API
   description: The Amazon License Manager API provides programmatic access to manage License Manager resources.
   version: '2024-01-01'
   contact:
@@ -140,44 +140,3 @@ components:
       name: Authorization
       in: header
       description: AWS Signature Version 4 authentication
-  schemas:
-    LicenseConfiguration:
-      type: object
-      description: An AWS License Manager license configuration.
-      properties:
-        LicenseConfigurationId:
-          type: string
-          description: Unique ID of the license configuration.
-          example: lic-0e6b56b16c0c11111
-        LicenseConfigurationArn:
-          type: string
-          description: Amazon Resource Name (ARN) of the license configuration.
-        Name:
-          type: string
-          description: Name of the license configuration.
-          example: windows-server-2022
-        LicenseCountingType:
-          type: string
-          description: Dimension for which the licenses are counted.
-          example: vCPU
-          enum:
-          - vCPU
-          - Instance
-          - Core
-          - Socket
-        LicenseCount:
-          type: integer
-          description: Number of licenses managed by the license configuration.
-          example: 100
-        LicenseCountHardLimit:
-          type: boolean
-          description: Number of available licenses as a hard limit.
-          example: true
-        ConsumedLicenses:
-          type: integer
-          description: Number of licenses consumed by the license configuration.
-          example: 45
-        Status:
-          type: string
-          description: Status of the license configuration.
-          example: AVAILABLE
