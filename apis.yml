@@ -5,7 +5,20 @@ description: >-
   Microsoft, SAP, Oracle, and IBM. It helps you control your licensing costs by letting you create rules that emulate
   the terms of your licensing agreements.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-license-manager.png
 tags:
   - AWS
   - Compliance
@@ -17,33 +30,31 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: amazon-license-manager:aws-license-manager-api
-    name: AWS License Manager API
-    description: >-
-      The AWS License Manager API provides programmatic access to create and manage license configurations, license
-      associations, grants, tokens, and license reports for managing software licenses across AWS.
-    humanURL: https://aws.amazon.com/license-manager/
-    baseURL: https://license-manager.amazonaws.com
-    tags:
-      - Compliance
-      - License Management
-      - Software Licensing
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/license-manager/latest/APIReference/Welcome.html
-      - type: OpenAPI
-        url: https://api.apis.guru/v2/specs/amazonaws.com/license-manager/2018-08-01/openapi.yaml
-      - type: GettingStarted
-        url: https://aws.amazon.com/license-manager/getting-started/
-      - type: Pricing
-        url: https://aws.amazon.com/license-manager/pricing/
-      - type: FAQ
-        url: https://aws.amazon.com/license-manager/faqs/
-      - type: JSONSchema
-        url: json-schema/amazon-license-manager-license-configuration-schema.json
-      - type: JSONLD
-        url: json-ld/amazon-license-manager-context.jsonld
+- aid: amazon-license-manager:amazon-license-manager-license-configurations-api
+  name: Amazon License Manager License Configurations API
+  description: License configuration management
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Configurations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-configurations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/license-manager/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/license-manager/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/license-manager/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/license-manager/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-license-configuration-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-license-manager-context.jsonld
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/amazon-license-manager/overview
   - type: AgenticAccess
     url: agentic-access/amazon-license-manager-agentic-access.yml
   - type: TrustCenter
