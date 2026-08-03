@@ -1,0 +1,947 @@
+{
+  "info": {
+    "_postman_id": "10c1d196-d7a7-42b9-b02f-e35059762c5a",
+    "name": "Amazon License Manager License Configurations API",
+    "description": "The Amazon License Manager API provides programmatic access to manage License Manager resources.\n\nContact Support:\n Name: AWS Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T00:47:35.000Z",
+    "updatedAt": "2026-07-28T00:47:36.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-10c1d196-d7a7-42b9-b02f-e35059762c5a"
+  },
+  "item": [
+    {
+      "name": "license-configurations",
+      "item": [
+        {
+          "name": "{LicenseConfigurationArn}",
+          "item": [
+            {
+              "name": "Amazon License Manager Get License Configuration",
+              "id": "ead53ae4-60c4-417e-ac2f-7f4a32346c00",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations",
+                    ":LicenseConfigurationArn"
+                  ],
+                  "variable": [
+                    {
+                      "id": "00c02cf9-3f6a-4fbb-8456-16438db7e9f2",
+                      "key": "LicenseConfigurationArn",
+                      "value": "<string>",
+                      "description": "(Required) Amazon Resource Name (ARN) of the license configuration."
+                    }
+                  ]
+                },
+                "description": "Gets detailed information about the specified license configuration."
+              },
+              "response": [
+                {
+                  "id": "49d4b113-0930-4055-9d7f-50628106c85b",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-49d4b113-0930-4055-9d7f-50628106c85b"
+                },
+                {
+                  "id": "648561ae-7a46-495f-9fb3-bd90f40549b7",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-648561ae-7a46-495f-9fb3-bd90f40549b7"
+                },
+                {
+                  "id": "94e02db2-e4c2-4ba5-9026-9d6342c2e82a",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-94e02db2-e4c2-4ba5-9026-9d6342c2e82a"
+                },
+                {
+                  "id": "6f075f2f-2fe6-48ab-b526-ffb0252a047c",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-6f075f2f-2fe6-48ab-b526-ffb0252a047c"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-ead53ae4-60c4-417e-ac2f-7f4a32346c00"
+            },
+            {
+              "name": "Amazon License Manager Update License Configuration",
+              "id": "d1b3899b-b839-4f64-a6d1-06f6e55c806d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations",
+                    ":LicenseConfigurationArn"
+                  ],
+                  "variable": [
+                    {
+                      "id": "eb0bf7b0-cee3-4d3e-9855-366067450f1f",
+                      "key": "LicenseConfigurationArn",
+                      "value": "<string>",
+                      "description": "(Required) Amazon Resource Name (ARN) of the license configuration."
+                    }
+                  ]
+                },
+                "description": "Modifies the attributes of an existing license configuration."
+              },
+              "response": [
+                {
+                  "id": "aa8d9af2-6d02-4add-9ca8-2ab093a99001",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-aa8d9af2-6d02-4add-9ca8-2ab093a99001"
+                },
+                {
+                  "id": "ecc7f27d-a107-419a-a671-6a5e9deb3937",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-ecc7f27d-a107-419a-a671-6a5e9deb3937"
+                },
+                {
+                  "id": "2a989765-35c3-42b2-9c0a-ea8d9b0ed69c",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-2a989765-35c3-42b2-9c0a-ea8d9b0ed69c"
+                },
+                {
+                  "id": "364b1f95-0e5b-4841-aeda-efcd61ac605b",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-364b1f95-0e5b-4841-aeda-efcd61ac605b"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-d1b3899b-b839-4f64-a6d1-06f6e55c806d"
+            },
+            {
+              "name": "Amazon License Manager Delete License Configuration",
+              "id": "1663b10c-507d-4cd9-a21e-fa10007394fe",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations",
+                    ":LicenseConfigurationArn"
+                  ],
+                  "variable": [
+                    {
+                      "id": "264ca0d0-8750-4a3e-9a87-7f8ba92988c3",
+                      "key": "LicenseConfigurationArn",
+                      "value": "<string>",
+                      "description": "(Required) Amazon Resource Name (ARN) of the license configuration."
+                    }
+                  ]
+                },
+                "description": "Deletes the specified license configuration."
+              },
+              "response": [
+                {
+                  "id": "f744f3e8-5594-485e-88f6-27cb5bfd74c7",
+                  "name": "Success",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-f744f3e8-5594-485e-88f6-27cb5bfd74c7"
+                },
+                {
+                  "id": "6a7ce0c2-2ade-41b7-9d0e-621162687735",
+                  "name": "Bad request",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-6a7ce0c2-2ade-41b7-9d0e-621162687735"
+                },
+                {
+                  "id": "f42cf5ab-ff0f-41a3-b4f6-9e4b5a185dcb",
+                  "name": "Access denied",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-f42cf5ab-ff0f-41a3-b4f6-9e4b5a185dcb"
+                },
+                {
+                  "id": "dfbfa8f2-5b53-434d-aaa6-5f7ac7b8f66d",
+                  "name": "Internal server error",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "Authorization",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/license-configurations/:LicenseConfigurationArn",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "license-configurations",
+                        ":LicenseConfigurationArn"
+                      ],
+                      "variable": [
+                        {
+                          "key": "LicenseConfigurationArn"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null,
+                  "createdAt": "2026-07-28T00:47:36.000Z",
+                  "updatedAt": "2026-07-28T00:47:36.000Z",
+                  "uid": "35240-dfbfa8f2-5b53-434d-aaa6-5f7ac7b8f66d"
+                }
+              ],
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-1663b10c-507d-4cd9-a21e-fa10007394fe"
+            }
+          ],
+          "id": "5f170a07-47e3-40d6-a4af-10661f46aebd",
+          "createdAt": "2026-07-28T00:47:36.000Z",
+          "updatedAt": "2026-07-28T00:47:36.000Z",
+          "uid": "35240-5f170a07-47e3-40d6-a4af-10661f46aebd"
+        },
+        {
+          "name": "Amazon License Manager Create License Configuration",
+          "id": "b2769062-2c9e-4fbd-b075-80a9d29d6274",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/license-configurations",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "license-configurations"
+              ]
+            },
+            "description": "Creates a license configuration."
+          },
+          "response": [
+            {
+              "id": "f8dcd283-d1c7-43c4-9a64-b70ef0133884",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-f8dcd283-d1c7-43c4-9a64-b70ef0133884"
+            },
+            {
+              "id": "58d9d448-3b73-4134-b6df-73d5245ff30e",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-58d9d448-3b73-4134-b6df-73d5245ff30e"
+            },
+            {
+              "id": "44a37e9b-82ac-4a6d-bd34-1cdf2c9d176b",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-44a37e9b-82ac-4a6d-bd34-1cdf2c9d176b"
+            },
+            {
+              "id": "aabbc291-18f1-4e86-84a6-0bae3ad36956",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-aabbc291-18f1-4e86-84a6-0bae3ad36956"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:36.000Z",
+          "updatedAt": "2026-07-28T00:47:36.000Z",
+          "uid": "35240-b2769062-2c9e-4fbd-b075-80a9d29d6274"
+        },
+        {
+          "name": "Amazon License Manager List License Configurations",
+          "id": "c177fb98-c443-42fd-991a-ec933b1cd6e9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/license-configurations",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "license-configurations"
+              ]
+            },
+            "description": "Lists the license configurations for your account."
+          },
+          "response": [
+            {
+              "id": "0d3c40b5-80fe-4861-adc1-e4492fd68416",
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-0d3c40b5-80fe-4861-adc1-e4492fd68416"
+            },
+            {
+              "id": "ff5f7b2b-8643-4f1e-a672-b561a5479072",
+              "name": "Bad request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-ff5f7b2b-8643-4f1e-a672-b561a5479072"
+            },
+            {
+              "id": "c1d03c8e-ba52-431c-99da-44fc1ce42d46",
+              "name": "Access denied",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-c1d03c8e-ba52-431c-99da-44fc1ce42d46"
+            },
+            {
+              "id": "602c400d-0b8e-48c5-8c36-900afbf50d0e",
+              "name": "Internal server error",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/license-configurations",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "license-configurations"
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "text",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": null,
+              "createdAt": "2026-07-28T00:47:36.000Z",
+              "updatedAt": "2026-07-28T00:47:36.000Z",
+              "uid": "35240-602c400d-0b8e-48c5-8c36-900afbf50d0e"
+            }
+          ],
+          "createdAt": "2026-07-28T00:47:36.000Z",
+          "updatedAt": "2026-07-28T00:47:36.000Z",
+          "uid": "35240-c177fb98-c443-42fd-991a-ec933b1cd6e9"
+        }
+      ],
+      "id": "14b3dc24-ee82-442d-83e1-595517181663",
+      "createdAt": "2026-07-28T00:47:36.000Z",
+      "updatedAt": "2026-07-28T00:47:36.000Z",
+      "uid": "35240-14b3dc24-ee82-442d-83e1-595517181663"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://license-manager.us-east-1.amazonaws.com"
+    }
+  ]
+}

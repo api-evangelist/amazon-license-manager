@@ -1,0 +1,14 @@
+{
+  "provider": "amazon-license-manager",
+  "sources": [
+    "amazon-license-manager-license-configurations-api-openapi.yml"
+  ],
+  "outputs": [
+    "amazon-license-manager-license-configurations-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

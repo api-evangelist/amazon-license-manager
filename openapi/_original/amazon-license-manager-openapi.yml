@@ -1,0 +1,183 @@
+openapi: 3.1.0
+info:
+  title: Amazon License Manager API
+  description: The Amazon License Manager API provides programmatic access to manage License Manager resources.
+  version: '2024-01-01'
+  contact:
+    name: AWS Support
+    url: https://aws.amazon.com/premiumsupport/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  x-logo:
+    url: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+servers:
+- url: https://license-manager.us-east-1.amazonaws.com
+  description: Amazon License Manager endpoint
+security:
+- sigv4: []
+tags:
+- name: License Configurations
+  description: License configuration management
+paths:
+  /license-configurations:
+    post:
+      operationId: CreateLicenseConfiguration
+      summary: Amazon License Manager Create License Configuration
+      description: Creates a license configuration.
+      tags:
+      - License Configurations
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    get:
+      operationId: ListLicenseConfigurations
+      summary: Amazon License Manager List License Configurations
+      description: Lists the license configurations for your account.
+      tags:
+      - License Configurations
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+  /license-configurations/{LicenseConfigurationArn}:
+    get:
+      operationId: GetLicenseConfiguration
+      summary: Amazon License Manager Get License Configuration
+      description: Gets detailed information about the specified license configuration.
+      tags:
+      - License Configurations
+      parameters:
+      - name: LicenseConfigurationArn
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Amazon Resource Name (ARN) of the license configuration.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    put:
+      operationId: UpdateLicenseConfiguration
+      summary: Amazon License Manager Update License Configuration
+      description: Modifies the attributes of an existing license configuration.
+      tags:
+      - License Configurations
+      parameters:
+      - name: LicenseConfigurationArn
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Amazon Resource Name (ARN) of the license configuration.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+    delete:
+      operationId: DeleteLicenseConfiguration
+      summary: Amazon License Manager Delete License Configuration
+      description: Deletes the specified license configuration.
+      tags:
+      - License Configurations
+      parameters:
+      - name: LicenseConfigurationArn
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Amazon Resource Name (ARN) of the license configuration.
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad request
+        '403':
+          description: Access denied
+        '500':
+          description: Internal server error
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+components:
+  securitySchemes:
+    sigv4:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: AWS Signature Version 4 authentication
+  schemas:
+    LicenseConfiguration:
+      type: object
+      description: An AWS License Manager license configuration.
+      properties:
+        LicenseConfigurationId:
+          type: string
+          description: Unique ID of the license configuration.
+          example: lic-0e6b56b16c0c11111
+        LicenseConfigurationArn:
+          type: string
+          description: Amazon Resource Name (ARN) of the license configuration.
+        Name:
+          type: string
+          description: Name of the license configuration.
+          example: windows-server-2022
+        LicenseCountingType:
+          type: string
+          description: Dimension for which the licenses are counted.
+          example: vCPU
+          enum:
+          - vCPU
+          - Instance
+          - Core
+          - Socket
+        LicenseCount:
+          type: integer
+          description: Number of licenses managed by the license configuration.
+          example: 100
+        LicenseCountHardLimit:
+          type: boolean
+          description: Number of available licenses as a hard limit.
+          example: true
+        ConsumedLicenses:
+          type: integer
+          description: Number of licenses consumed by the license configuration.
+          example: 45
+        Status:
+          type: string
+          description: Status of the license configuration.
+          example: AVAILABLE
