@@ -28,7 +28,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml
 created: '2026-03-16'
 modified: '2026-05-19'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: amazon-license-manager:amazon-license-manager-license-configurations-api
   name: Amazon License Manager License Configurations API
