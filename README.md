@@ -1,4 +1,4 @@
-# Amazon License Manager (amazon-license-manager)
+# Amazon License Manager
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,75 +66,170 @@
 
 AWS License Manager makes it easier to manage licenses in AWS and on-premises servers from software vendors such as Microsoft, SAP, Oracle, and IBM. It helps you control your licensing costs by letting you create rules that emulate the terms of your licensing agreements.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/refs/heads/main/apis.yml)
+**Areas:** AWS · Compliance · Cost Management · License Management · Software Licensing
 
-## Scope
+## Amazon License Manager on APIs.io
 
-- **Type:** Index
+Everything profiled for Amazon License Manager is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-license-manager/](https://apis.io/providers/amazon-license-manager/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- AWS
-- Compliance
-- Cost Management
-- License Management
-- Software Licensing
+- [Amazon License Manager License Configurations API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-configurations-api/) — License configuration management
+- [Amazon License Manager License Manager Grant API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-grant-api/) — The License Manager Grant API from Amazon License Manager — 5 operation(s) for license manager grant.
+- [Amazon License Manager License Manager License API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-api/) — The License Manager License API from Amazon License Manager — 4 operation(s) for license manager license.
+- [Amazon License Manager License Manager License Asset Group API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-asset-group-api/) — The License Manager License Asset Group API from Amazon License Manager — 5 operation(s) for license manager license asset group.
+- [Amazon License Manager License Manager License Asset Ruleset API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-asset-ruleset-api/) — The License Manager License Asset Ruleset API from Amazon License Manager — 5 operation(s) for license manager license asset ruleset.
+- [Amazon License Manager License Manager License Conversion Task API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-conversion-task-api/) — The License Manager License Conversion Task API from Amazon License Manager — 3 operation(s) for license manager license conversion task.
+- [Amazon License Manager License Manager License Manager Report Generator API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-license-manager-report-generator-api/) — The License Manager License Manager Report Generator API from Amazon License Manager — 5 operation(s) for license manager license manager report generator.
+- [Amazon License Manager License Manager Operations API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-operations-api/) — The License Manager Operations API from Amazon License Manager — 26 operation(s) for license manager operations.
+- [Amazon License Manager License Manager Token API](https://apis.io/apis/amazon-license-manager/amazon-license-manager-token-api/) — The License Manager Token API from Amazon License Manager — 3 operation(s) for license manager token.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### AWS License Manager API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The AWS License Manager API provides programmatic access to create and manage license configurations, license associations, grants, tokens, and license reports for managing software licenses across AWS.
+- [Amazon License Manager Agentic Access](https://apis.io/agentic-access/amazon-license-manager/amazon-license-manager-agentic-access/)
 
-- **Human URL:** [https://aws.amazon.com/license-manager/](https://aws.amazon.com/license-manager/)
-- **Base URL:** `https://license-manager.amazonaws.com`
+#### JSON Schema (1)
 
-#### Tags
+The data models the API reads and writes.
 
-- Compliance
-- License Management
-- Software Licensing
+- [LicenseConfiguration](https://apis.io/schemas/amazon-license-manager/amazon-license-manager-license-configuration/)
 
-#### Properties
+#### JSON Structure (1)
 
-- [Documentation](https://docs.aws.amazon.com/license-manager/latest/APIReference/Welcome.html)
-- [OpenAPI](https://api.apis.guru/v2/specs/amazonaws.com/license-manager/2018-08-01/openapi.yaml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Getting Started](https://aws.amazon.com/license-manager/getting-started/)
-- [Pricing](https://aws.amazon.com/license-manager/pricing/)
-- [F A Q](https://aws.amazon.com/license-manager/faqs/)
-- [JSON Schema](json-schema/amazon-license-manager-license-configuration-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/amazon-license-manager-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Postman Collection](collections/amazon-license-manager.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/amazon-license-manager.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Data models expressed in JSON Structure.
 
-## Common Properties
+- [Amazon License Manager License Configuration Structure](https://apis.io/json-structure/amazon-license-manager/amazon-license-manager-license-configuration-structure/)
 
-- [Portal](https://aws.amazon.com/license-manager/)
-- [Portal](https://aws.amazon.com/license-manager/)
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon License Manager Context](https://apis.io/jsonld/amazon-license-manager/amazon-license-manager-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon License Manager Vocabulary](https://apis.io/vocabularies/amazon-license-manager/amazon-license-manager-vocabulary/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Amazon License Manager License Configuration Example](https://apis.io/examples/amazon-license-manager/amazon-license-manager-license-configuration-example/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Amazon License Manager API](https://apis.io/collections/amazon-license-manager/open-amazon-license-manager/)
+- [Amazon License Manager License Configurations API](https://apis.io/collections/amazon-license-manager/open-amazon-license-manager-license-configurations-api/)
+- [Amazon License Manager License Configurations API](https://apis.io/collections/amazon-license-manager/postman-amazon-license-manager-license-configurations-api/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon License Manager — jsonschema rules](https://apis.io/rules/amazon-license-manager/amazon-license-manager-jsonschema-spectral-rules/)
+- [Amazon License Manager API Rules](https://apis.io/rules/amazon-license-manager/amazon-license-manager-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon License Manager Authentication](https://apis.io/security/amazon-license-manager/amazon-license-manager-authentication/)
+- [Amazon License Manager Domain Security](https://apis.io/security/amazon-license-manager/amazon-license-manager-domain-security/)
+- [Amazon License Manager Trust Center](https://apis.io/security/amazon-license-manager/amazon-license-manager-trust-center/)
+- [Amazon License Manager Vulnerability Disclosure](https://apis.io/security/amazon-license-manager/amazon-license-manager-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon License Manager Plans Pricing](https://apis.io/plans/amazon-license-manager/amazon-license-manager-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon License Manager Rate Limits](https://apis.io/rate-limits/amazon-license-manager/amazon-license-manager-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon License Manager Finops](https://apis.io/finops/amazon-license-manager/amazon-license-manager-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aws.amazon.com/license-manager/)
 - [Documentation](https://docs.aws.amazon.com/license-manager/)
-- [Terms of Service](https://aws.amazon.com/service-terms/)
-- [Privacy Policy](https://aws.amazon.com/privacy/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/mt/tag/aws-license-manager/)
-- [GitHub Organization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/license-manager/)
-- [Sign Up](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [Status Page](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [Spectral Rules](rules/amazon-license-manager-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-license-manager-vocabulary.yaml)
-- [Integrations](https://aws.amazon.com/marketplace)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 51.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 61.9 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 46.4 |
+| Access clarity | 53.9 |
+
+**Agent readiness 19.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-license-manager/](https://apis.io/providers/amazon-license-manager/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon License Manager: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-license-manager/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
