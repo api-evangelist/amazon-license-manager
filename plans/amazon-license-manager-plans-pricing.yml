@@ -24,7 +24,7 @@ plans:
   period: none
   included_quota: You pay for AWS resources (e.g. EC2 instances) you create to run your application.
 x-canonical:
-  generated: '2026-11-01'
+  generated: '2026-11-02'
   vocabulary: engine/economics/plans-canonical.yml
   models: []
   units: []
