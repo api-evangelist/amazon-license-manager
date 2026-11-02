@@ -1,0 +1,38 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-28'
+method: searched
+source: https://aws.amazon.com/license-manager/pricing/
+sources:
+- https://aws.amazon.com/license-manager/pricing/
+provenance:
+  tool: engine/economics/harvest_pricing.py
+  run: 20261028T161713
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: free
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-28'
+published: false
+note: Page states no additional charge for License Manager; no numeric prices shown. Underlying AWS resources
+  billed separately.
+plan_count: 1
+plans:
+- name: AWS License Manager
+  price_text: There is no additional charge for AWS License Manager.
+  period: none
+  included_quota: You pay for AWS resources (e.g. EC2 instances) you create to run your application.
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: AWS License Manager
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
