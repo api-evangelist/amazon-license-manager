@@ -1,8 +1,7 @@
 aid: amazon-license-manager
 name: Amazon License Manager
-description: AWS License Manager makes it easier to manage licenses in AWS and on-premises servers from
-  software vendors such as Microsoft, SAP, Oracle, and IBM. It helps you control your licensing costs
-  by letting you create rules that emulate the terms of your licensing agreements.
+description: AWS License Manager makes it easier to manage licenses in AWS and on-premises servers from software vendors such as Microsoft, SAP,
+  Oracle, and IBM. It helps you control your licensing costs by letting you create rules that emulate the terms of your licensing agreements.
 type: Index
 deliveryModel:
   model: saas
@@ -28,7 +27,7 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-license-manager.png
 tags:
@@ -47,123 +46,50 @@ url: https://raw.githubusercontent.com/api-evangelist/amazon-license-manager/ref
 created: '2026-03-16'
 modified: '2026-09-16'
 specificationVersion: '0.23'
-apis:
-- aid: amazon-license-manager:amazon-license-manager-license-configurations-api
-  name: Amazon License Manager License Configurations API
-  description: License configuration management
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Configurations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-configurations-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/license-manager/latest/APIReference/Welcome.html
-  - type: GettingStarted
-    url: https://aws.amazon.com/license-manager/getting-started/
-  - type: Pricing
-    url: https://aws.amazon.com/license-manager/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/license-manager/faqs/
-  - type: JSONSchema
-    url: json-schema/amazon-license-manager-license-configuration-schema.json
-  - type: JSONLD
-    url: json-ld/amazon-license-manager-context.jsonld
-- aid: amazon-license-manager:amazon-license-manager-grant-api
-  name: Amazon License Manager License Manager Grant API
-  description: >-
-    The License Manager Grant API from Amazon License Manager — 5 operation(s) for license manager grant.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager Grant
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-grant-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-license-api
-  name: Amazon License Manager License Manager License API
-  description: >-
-    The License Manager License API from Amazon License Manager — 4 operation(s) for license manager license.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager License
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-license-asset-group-api
-  name: Amazon License Manager License Manager License Asset Group API
-  description: >-
-    The License Manager License Asset Group API from Amazon License Manager — 5 operation(s) for license
-    manager license asset group.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager License Asset Group
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-asset-group-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-license-asset-ruleset-api
-  name: Amazon License Manager License Manager License Asset Ruleset API
-  description: >-
-    The License Manager License Asset Ruleset API from Amazon License Manager — 5 operation(s) for license
-    manager license asset ruleset.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager License Asset Ruleset
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-asset-ruleset-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-license-conversion-task-api
-  name: Amazon License Manager License Manager License Conversion Task API
-  description: >-
-    The License Manager License Conversion Task API from Amazon License Manager — 3 operation(s) for license
-    manager license conversion task.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager License Conversion Task
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-conversion-task-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-license-manager-report-generator-api
-  name: Amazon License Manager License Manager License Manager Report Generator API
-  description: >-
-    The License Manager License Manager Report Generator API from Amazon License Manager — 5 operation(s)
-    for license manager license manager report generator.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager License Manager Report Generator
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-license-manager-report-generator-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-operations-api
-  name: Amazon License Manager License Manager Operations API
-  description: >-
-    The License Manager Operations API from Amazon License Manager — 26 operation(s) for license manager
-    operations.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-operations-api-openapi.yml
-- aid: amazon-license-manager:amazon-license-manager-token-api
-  name: Amazon License Manager License Manager Token API
-  description: >-
-    The License Manager Token API from Amazon License Manager — 3 operation(s) for license manager token.
-  humanURL: https://aws.amazon.com/license-manager/
-  baseURL: https://license-manager.amazonaws.com
-  tags:
-  - License Manager Token
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-license-manager-token-api-openapi.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
 common:
+- type: Spectral
+  url: rules/amazon-license-manager-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-license-manager-rules.yml
+- type: Spectral
+  url: rules/amazon-license-manager-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-license-manager-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-license-manager-data-model.yml
+- type: ChangeLog
+  url: changelog/amazon-license-manager-changelog.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: ErrorCatalog
+  url: errors/amazon-license-manager-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-license-manager-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-license-manager-llms.txt
+- type: MCPServer
+  url: mcp/amazon-license-manager-mcp.yml
+- type: SecurityTxt
+  url: well-known/amazon-license-manager-security.txt
+- type: WellKnown
+  url: well-known/amazon-license-manager-well-known.yml
+- type: Hosts
+  url: hosts/amazon-license-manager-hosts.yml
+- type: Vendors
+  url: vendors/amazon-license-manager-vendors.yml
+- type: SDKs
+  url: packages/amazon-license-manager-packages.yml
+- type: Packages
+  url: packages/amazon-license-manager-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: Plans
   url: plans/amazon-license-manager-plans-pricing.yml
 - type: RateLimits
@@ -213,8 +139,7 @@ common:
 - type: Features
   data:
   - name: License Rule Enforcement
-    description: Define licensing rules based on software attributes and enforce them during instance
-      launches.
+    description: Define licensing rules based on software attributes and enforce them during instance launches.
   - name: License Tracking
     description: Track license usage across AWS and on-premises environments from a central dashboard.
   - name: Cross-Account Discovery
@@ -245,6 +170,303 @@ common:
   url: vocabulary/amazon-license-manager-vocabulary.yaml
 - type: Integrations
   url: https://aws.amazon.com/marketplace
+- type: UsageTerms
+  url: terms/amazon-license-manager-terms-of-service.yml
+- type: Attestations
+  url: compliance/amazon-license-manager-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-license-manager-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-license-manager-ai-preferences.yml
+apis:
+- aid: amazon-license-manager:amazon-license-manager-license-configurations-api
+  name: Amazon License Manager License Configurations API
+  description: License configuration management
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Configurations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-configurations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/license-manager/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/license-manager/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/license-manager/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/license-manager/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-license-configuration-schema.json
+  - type: JSONLD
+    url: json-ld/amazon-license-manager-context.jsonld
+- aid: amazon-license-manager:amazon-license-manager-grant-api
+  name: Amazon License Manager License Manager Grant API
+  description: The License Manager Grant API from Amazon License Manager — 5 operation(s) for license manager grant.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager Grant
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-grant-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-grant-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-accept-grant-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-grant-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-grant-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-reject-grant-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-grant-request-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-api
+  name: Amazon License Manager License Manager License API
+  description: The License Manager License API from Amazon License Manager — 4 operation(s) for license manager license.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-licenses-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-licenses-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-asset-group-api
+  name: Amazon License Manager License Manager License Asset Group API
+  description: The License Manager License Asset Group API from Amazon License Manager — 5 operation(s) for license manager license asset group.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License Asset Group
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-asset-group-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-update-license-asset-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-asset-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-asset-groups-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-asset-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-update-license-asset-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-asset-groups-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-asset-ruleset-api
+  name: Amazon License Manager License Manager License Asset Ruleset API
+  description: The License Manager License Asset Ruleset API from Amazon License Manager — 5 operation(s) for license manager license asset ruleset.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License Asset Ruleset
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-asset-ruleset-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-update-license-asset-ruleset-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-asset-ruleset-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-asset-rulesets-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-asset-rulesets-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-asset-ruleset-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-asset-ruleset-request-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-conversion-task-api
+  name: Amazon License Manager License Manager License Conversion Task API
+  description: The License Manager License Conversion Task API from Amazon License Manager — 3 operation(s) for license manager license conversion
+    task.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License Conversion Task
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-conversion-task-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-get-license-conversion-task-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-conversion-task-for-resource-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-conversion-tasks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-conversion-tasks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-get-license-conversion-task-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-conversion-task-for-resource-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-manager-report-generator-api
+  name: Amazon License Manager License Manager License Manager Report Generator API
+  description: The License Manager License Manager Report Generator API from Amazon License Manager — 5 operation(s) for license manager license
+    manager report generator.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License Manager Report Generator
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-manager-report-generator-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-update-license-manager-report-generator-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-manager-report-generator-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-manager-report-generators-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-manager-report-generators-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-manager-report-generator-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-get-license-manager-report-generator-request-schema.json
+- aid: amazon-license-manager:amazon-license-manager-operations-api
+  name: Amazon License Manager License Manager Operations API
+  description: The License Manager Operations API from Amazon License Manager — 26 operation(s) for license manager operations.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-version-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-grant-version-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-get-service-settings-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-checkout-borrow-license-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-resource-inventory-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-checkout-borrow-license-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-token-api
+  name: Amazon License Manager License Manager Token API
+  description: The License Manager Token API from Amazon License Manager — 3 operation(s) for license manager token.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager Token
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-token-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-token-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-tokens-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-token-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-tokens-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-token-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-token-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-identity-provider-api
+  name: Amazon License Manager License Manager Identity Provider API
+  description: The License Manager Identity Provider API from Amazon License Manager — 4 operation(s) for license manager identity provider.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager Identity Provider
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-identity-provider-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-identity-providers-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-register-identity-provider-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-update-identity-provider-settings-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-identity-providers-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-deregister-identity-provider-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-deregister-identity-provider-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-license-server-api
+  name: Amazon License Manager License Manager License Server API
+  description: The License Manager License Server API from Amazon License Manager — 3 operation(s) for license manager license server.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager License Server
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-license-server-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-server-endpoint-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-server-endpoints-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-license-server-endpoints-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-server-endpoint-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-create-license-server-endpoint-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-delete-license-server-endpoint-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-subscription-api
+  name: Amazon License Manager License Manager Subscription API
+  description: The License Manager Subscription API from Amazon License Manager — 6 operation(s) for license manager subscription.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager Subscription
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-subscription-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-get-registered-subscription-provider-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-linux-subscription-instances-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-linux-subscriptions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-register-subscription-provider-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-registered-subscription-providers-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-register-subscription-provider-response-schema.json
+- aid: amazon-license-manager:amazon-license-manager-user-api
+  name: Amazon License Manager License Manager User API
+  description: The License Manager User API from Amazon License Manager — 6 operation(s) for license manager user.
+  humanURL: https://aws.amazon.com/license-manager/
+  baseURL: https://license-manager.amazonaws.com
+  tags:
+  - License Manager User
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-license-manager-user-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-product-subscriptions-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-start-product-subscription-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-list-user-associations-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-stop-product-subscription-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-associate-user-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-license-manager-disassociate-user-request-schema.json
 integrations:
 - name: Sign in
 - name: Agent Mode
@@ -255,8 +477,10 @@ integrations:
 - name: Become a Channel Partner
 - name: Sell in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
 x-parent: amazon-web-services
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v6

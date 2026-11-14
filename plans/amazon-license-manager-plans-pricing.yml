@@ -2,6 +2,7 @@
 generated: '2026-10-28'
 method: searched
 source: https://aws.amazon.com/license-manager/pricing/
+name: Amazon License Manager API Plans
 sources:
 - https://aws.amazon.com/license-manager/pricing/
 provenance:
@@ -24,7 +25,7 @@ plans:
   period: none
   included_quota: You pay for AWS resources (e.g. EC2 instances) you create to run your application.
 x-canonical:
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   vocabulary: engine/economics/plans-canonical.yml
   models: []
   units: []

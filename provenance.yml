@@ -5,8 +5,20 @@ artifacts:
   agentic-access/amazon-license-manager-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-license-manager-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-license-manager-authentication.yml:
     method: derived
+    evidence: declared in the artifact
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  changelog/amazon-license-manager-changelog.yml:
+    method: searched
     evidence: declared in the artifact
   collections/amazon-license-manager-license-configurations-api.opencollection.json:
     method: derived
@@ -20,6 +32,21 @@ artifacts:
   collections/amazon-license-manager.postman_collection.json:
     method: derived
     evidence: openapi/amazon-license-manager
+  compliance/amazon-license-manager-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-license-manager-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-license-manager-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-license-manager-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
+  errors/amazon-license-manager-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-license-manager-license-configuration-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -29,6 +56,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-license-manager-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -38,7 +68,223 @@ artifacts:
   json-ld/amazon-license-manager-context.jsonld:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-license-manager-accept-grant-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-associate-user-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-checkout-borrow-license-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-checkout-borrow-license-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-grant-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-grant-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-grant-version-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-asset-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-asset-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-asset-ruleset-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-asset-ruleset-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-conversion-task-for-resource-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-conversion-task-for-resource-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-manager-report-generator-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-server-endpoint-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-server-endpoint-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-license-version-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-token-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-create-token-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-grant-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-grant-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-asset-ruleset-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-manager-report-generator-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-server-endpoint-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-license-server-endpoint-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-token-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-delete-token-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-deregister-identity-provider-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-deregister-identity-provider-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-disassociate-user-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-get-license-conversion-task-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-get-license-conversion-task-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-get-license-manager-report-generator-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-get-registered-subscription-provider-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-get-service-settings-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-license-manager-license-configuration-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-identity-providers-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-identity-providers-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-asset-groups-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-asset-groups-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-asset-rulesets-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-asset-rulesets-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-conversion-tasks-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-conversion-tasks-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-manager-report-generators-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-manager-report-generators-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-server-endpoints-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-license-server-endpoints-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-licenses-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-licenses-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-linux-subscription-instances-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-linux-subscriptions-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-product-subscriptions-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-registered-subscription-providers-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-resource-inventory-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-tokens-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-tokens-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-list-user-associations-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-register-identity-provider-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-register-subscription-provider-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-register-subscription-provider-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-reject-grant-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-start-product-subscription-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-stop-product-subscription-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-update-identity-provider-settings-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-update-license-asset-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-update-license-asset-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-update-license-asset-ruleset-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-license-manager-update-license-manager-report-generator-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-structure/amazon-license-manager-license-configuration-structure.json:
@@ -47,7 +293,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -116,11 +362,22 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-license-manager-openapi.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  llms/amazon-license-manager-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-license-manager-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-license-manager-mcp.yml:
+    method: searched
+    evidence: declared in the artifact
   openapi/amazon-license-manager-grant-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  openapi/amazon-license-manager-identity-provider-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
   openapi/amazon-license-manager-license-api-openapi.yml:
@@ -141,12 +398,27 @@ artifacts:
   openapi/amazon-license-manager-license-manager-report-generator-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  openapi/amazon-license-manager-license-server-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
   openapi/amazon-license-manager-operations-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  openapi/amazon-license-manager-subscription-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
   openapi/amazon-license-manager-token-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  openapi/amazon-license-manager-user-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  packages/amazon-license-manager-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-license-manager-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-license-manager-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -157,6 +429,9 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   rules/amazon-license-manager-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-license-manager-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-license-manager-spectral-rules.yml:
@@ -175,8 +450,35 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/license-manager-2018-08-01.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/license-manager/service/2018-08-01/license-manager-2018-08-01.json
+      (sha256 5cb098510127, fetched 2026-11-11T21:11:42+00:00)
+  smithy/license-manager-linux-subscriptions-2018-05-10.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/license-manager-linux-subscriptions/service/2018-05-10/license-manager-linux-subscriptions-2018-05-10.json
+      (sha256 38047a054a12, fetched 2026-11-11T21:11:42+00:00)
+  smithy/license-manager-user-subscriptions-2018-05-10.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/license-manager-user-subscriptions/service/2018-05-10/license-manager-user-subscriptions-2018-05-10.json
+      (sha256 0483327c9243, fetched 2026-11-11T21:11:43+00:00)
+  terms/amazon-license-manager-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-license-manager-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-license-manager-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-license-manager-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-license-manager-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-license-manager-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-license-manager-well-known.yml:
     method: unknown
     evidence: no authorship recorded
